@@ -1,0 +1,986 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --primary-color: #b82025;
+  --secondary-color: #000000;
+  --danger-color: #dc2626;
+  --white: #ffffff;
+  --gray: #f3f4f6;
+  --border-color: #d1d5db;
+  --padding: 12px 24px;
+}
+
+
+
+
+
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+.primary:hover {
+  background-color: #b82025;
+}
+/* Secondary */
+/* .secondary {
+  background-color: var(--gray);
+  color: var(--secondary-color);
+}
+.secondary:hover {
+  background-color: #e5e7eb;
+} */ 
+
+
+
+
+/* 
+  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
+*/
+
+.ck-editor__editable {
+  min-height: 200px !important;
+}
+
+.texteditoelable {
+  background: white;
+  padding: 0px 6px;
+}
+
+.user-detail {
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0px 0px 30px #ddd;
+}
+
+.user-detail .user-heading {
+  padding: 4px 13px;
+  background: #181b26;
+  color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+
+.css-qiwgdb.MuiSelect-select {
+  height: 1.4375em !important;
+  text-overflow: ellipsis !important;
+  white-space: normal !important;
+  overflow: auto !important;
+}
+
+.linkdisable {
+  pointer-events: none;
+}
+
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 120px 24px 160px 24px;
+  pointer-events: none;
+}
+
+.main:before {
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.main:after {
+  content: "";
+  background-image: url("/assets/images/grid.svg");
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+}
+
+.login-page-img {
+  width: 449px;
+  height: 519px;
+}
+
+.user-accordin .MuiAccordionSummary-content {
+  display: flex;
+  justify-content: space-between;
+  margin: 12px 0 !important;
+}
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}
+
+.bg-theme-color {
+  background: #231f20 !important;
+}
+
+.bg-theme-red {
+  background: #b82025 !important;
+}
+
+.custom-shadow {
+  /* box-shadow: 0px 0px 30px #ddd; */
+}
+
+.body,
+p,
+span,
+a,
+table,
+th,
+td,
+button,
+div {
+  font-family: Inter, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Inter, sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+td {
+  color: rgba(58, 53, 65, 0.7) !important;
+  letter-spacing: 0.2px !important;
+}
+
+.inputfields input {
+  padding: 7px;
+}
+
+.task-close-button {
+  margin-left: 20% !important;
+  margin-top: -197px !important;
+  width: 15%;
+}
+
+.sideBarAccordion a {
+  font-size: 14px;
+  padding: 0 0 0 20px;
+}
+
+.table-header {
+  position: relative;
+  z-index: 9;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 65px;
+  left: 0;
+  width: calc(100% - 283px) !important;
+  z-index: 100;
+  max-width: 100%;
+  background-color: #fff;
+  margin-left: 17.7rem;
+}
+
+.table-header.fixed-header {
+  width: calc(100% - 307px) !important;
+}
+
+.description-area .MuiInputBase-root {
+  padding: 0;
+}
+
+.site-footer {
+  width: 100%;
+  margin-left: 0px;
+  box-shadow: 0px -4px 4px -1px rgba(0, 0, 0, 0.2),
+    0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.DataTablePagination {
+  width: 980px;
+}
+
+.hour-tablehead tr th {
+  font-weight: 600;
+  background: #f3f3f3;
+}
+
+.textEditrOuter p {
+  position: static !important;
+}
+
+.textEditrOuter .ck-blurred {
+  border-radius: 4px !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+}
+
+.textEditrOute .ck.ck-sticky-panel__content {
+  border-radius: 4px !important;
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+}
+.texteditoelable {
+  padding: 0px 10px !important;
+}
+.textEditrOuter ul,
+.textEditrOuter ol {
+  padding: 0px 30px !important;
+}
+
+.css-1wc848c-MuiFormHelperText-root.Mui-error {
+  color: #d32f2f;
+  margin-left: 24px;
+}
+
+/* .user-from-container p {
+  position: absolute;
+  bottom: -22px;
+} */
+
+.accordin-main table tbody tr:last-child td {
+  background: #fff;
+  border-bottom: none;
+}
+
+.max-width-full {
+  max-width: 100% !important;
+}
+
+.accordin-main .user-accordin {
+  background: #e8e8e8;
+  min-height: inherit !important;
+}
+
+.description-area textarea {
+  color: black !important;
+  -webkit-text-fill-color: black !important;
+}
+
+.accordin-main .MuiAccordion-region .user-accordin {
+  background: #f3f3f3;
+  padding: 10px 14px 8px;
+  border-top: 1px solid #eaeaea;
+  border-left: 1px solid #eaeaea;
+  border-right: 1px solid #eaeaea;
+  margin: 10px 0 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.accordin-main .MuiAccordionDetails-root {
+  padding: 0;
+}
+
+.accordin-main {
+  border: none;
+  border-radius: 0 0 5px 5px !important;
+  margin-top: 0 !important;
+  box-shadow: 0px 0px 30px #ddd !important;
+  padding: 10px;
+}
+
+.accordin-main .MuiPaper-elevation {
+  border: 1px solid #eaeaea;
+  border-radius: 0 0 5px 5px;
+  box-shadow: none;
+}
+
+.accordin-main
+  .MuiAccordion-region
+  .user-accordin
+  .MuiAccordionSummary-content {
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+.accordin-main .MuiButtonBase-root.user-accordin {
+  border-radius: 5px 5px 0 0;
+}
+
+.accordin-main .MuiAccordion-region .MuiAccordionSummary-expandIconWrapper {
+  margin-top: 17px;
+}
+
+.description-area fieldset {
+  border: none;
+}
+
+.task-navigation-bar {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.login-form input {
+  background: #f6f6f6;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding-left: 25px;
+}
+.login-form-wrapper input {
+  padding-left: 25px;
+}
+.login-form-wrapper label {
+  padding-left: 14px;
+}
+.sidebar-accordion .MuiTypography-root {
+  padding: 0;
+}
+
+.sidebar-accordion .MuiAccordion-root {
+  padding: 10px 10px 0;
+  border: none;
+}
+
+.sidebar-accordion .MuiAccordion-root .MuiAccordionSummary-root {
+  border-radius: 5px 5px 0 0;
+}
+
+.sidebar-accordion
+  .MuiAccordion-root.accordian-active
+  .MuiAccordionSummary-expandIconWrapper {
+  color: #fff;
+}
+
+.accordian-active .MuiCollapse-root {
+  /* background-color: #323e54;
+  border-radius: 0px 0px 5px 5px; */
+}
+
+.MuiCollapse-root .sideBarAccordion {
+  border: none;
+}
+
+.accordian-active .MuiAccordionSummary-root .MuiTypography-root {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.sidebar-accordion .Mui-expanded.MuiAccordion-root .MuiAccordionSummary-root {
+  background-color: #b82025;
+}
+.sub-menu-item {
+  position: relative;
+  padding-left: 25px; /* spacing for dot + line */
+}
+
+/* Dot before each AccordionDetails */
+.sub-menu-item:before {
+  content: "";
+  position: absolute;
+  left: 29px;
+  top: 42%;
+  width: 8px;
+  height: 8px;
+  background: #898989;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Line between items */
+.sub-menu-item:not(:last-child):after {
+  content: "";
+  position: absolute;
+  left: 32px;
+  top: -5px;
+  width: 2px;
+  height: calc(186% - 12px);
+  background: #898989;
+  z-index: 9999;
+}
+/* 
+ .sub-menu-item:last-child::after{
+   content: "";
+  position: absolute;
+  left: 32px;
+  top: -5px;
+  width: 2px;
+  height: calc(186% - 12px);
+  background: #898989;
+
+ } */
+
+.sub-menu-item:last-child::after{
+  height: calc(76% - 12px);
+} 
+
+/* Active link */
+.sub-menu-item a.accordian-active {
+  color: #c62828; /* red highlight */
+  font-weight: bold;
+}
+
+.sidebar-accordion .MuiCollapse-root .sideBarAccordion a {
+  padding: 4px 11px !important;
+  font-size: 15px !important;
+  display: block;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.sidebar-accordion .MuiAccordion-root .Mui-expanded {
+  color: #fff;
+}
+
+.sidebar-accordion .MuiCollapse-root .MuiAccordion-region {
+  padding: 10px 0;
+}
+
+.table-header .MuiPaper-root {
+  border-radius: 0px 0px 5px 5px;
+  box-shadow: none;
+  padding: 0 10px;
+  background: #231f20;
+}
+
+.sidebar-accordion
+  .MuiAccordion-root
+  .MuiAccordionSummary-root
+  .MuiAccordionSummary-expandIconWrapper {
+  color: #fff;
+}
+
+.accordin-main
+  .MuiButtonBase-root.user-accordin
+  .MuiAccordionSummary-expandIconWrapper {
+  background: #fff;
+  margin: 0 0 0 10px;
+  border-radius: 100%;
+  color: #000000;
+}
+
+.accordin-main
+  .MuiButtonBase-root.user-accordin
+  .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  color: #b82025;
+}
+
+form.filter-form {
+  box-shadow: 0px 0px 30px #ddd;
+}
+
+/* form.filter-form .MuiGrid-root .MuiSelect-select {
+  padding: 12px 17px;
+} */
+form.filter-form .MuiInputBase-root {
+  box-shadow: none;
+}
+
+.sidebar-accordion .MuiPaper-root.MuiPaper-elevation {
+  background: #231f20;
+  color: #fff;
+}
+
+.sidebar-accordion .MuiCollapse-root .sideBarAccordion {
+  padding: 8px 0;
+}
+
+.sidebar-accordion .MuiCollapse-root .sideBarAccordion .accordian-active {
+  /* background: #FFE3E4;
+  padding: 15px !important; */
+  color: #b82025;
+}
+
+.by-user-accordian .MuiAccordionSummary-content {
+  margin: 0 0 !important;
+}
+
+.by-user-accordian .MuiButtonBase-root {
+  min-height: 56px;
+  background: rgb(32 38 56);
+}
+
+.by-user-accordian {
+  box-shadow: 0px 0px 30px #ddd;
+}
+
+.by-user-accordian .MuiCollapse-root .MuiAccordionDetails-root {
+  padding: 12px;
+}
+
+.by-user-accordian .MuiAccordionSummary-expandIconWrapper {
+  background: #fff;
+  margin: 0 0 0 10px;
+  border-radius: 100%;
+  color: #000000;
+}
+
+.by-user-accordian .MuiAccordionSummary-expandIconWrapper.Mui-expanded {
+  color: #b82025;
+}
+
+.by-user-accordian .MuiCollapse-root .MuiPaper-root {
+  box-shadow: none;
+  border: 1px solid rgba(224, 224, 224, 1);
+}
+
+.by-user-accordian
+  .MuiCollapse-root
+  .MuiPaper-root
+  .MuiTable-root
+  .MuiTableRow-root:last-child
+  td {
+  border-bottom: none;
+  background: #fff;
+}
+
+.MuiDialogActions-root button.MuiButtonBase-root {
+  color: #b82025;
+}
+
+.custom-pagination .MuiInputBase-root svg.MuiSvgIcon-root {
+  color: #181b26;
+}
+
+.custom-pagination .MuiSelect-select {
+  font-weight: 600;
+}
+
+.custom-pagination button.Mui-disabled {
+  color: rgb(0 0 0 / 50%);
+}
+
+.add-page-hover-btn {
+  background-color: #b82025 !important;
+  color: white !important;
+}
+
+.add-page-hover-btn:hover {
+  background-color: #910a0f !important;
+  color: white !important;
+}
+
+.commentNotes {
+  position: absolute;
+  right: 22px;
+  bottom: 11px;
+}
+
+.login-container {
+  max-width: 900px;
+  width: 100%;
+}
+
+.dasboard-project-title {
+  margin: 30px 0 30px !important;
+
+  font-size: 30px !important;
+  text-transform: capitalize;
+}
+
+.profile-image-user {
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+}
+
+.description-timedate {
+  color: gray !important;
+  font-style: italic;
+  line-height: 0.5 !important;
+  letter-spacing: 0.00938em !important;
+  font-size: 0.8rem !important;
+}
+
+.hoursDescription textarea {
+  resize: vertical !important;
+}
+
+.helthProgress {
+  position: relative;
+  width: 48px;
+}
+
+.helthProgress div:nth-child(1) {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 13px;
+  text-align: center;
+}
+
+.dashboard-table-title {
+  width: 100%;
+  background-color: #e8e8e8;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+}
+
+.dashboard-table-title span {
+  font-size: 18px !important;
+  margin-top: 6px;
+  padding-left: 10px;
+  color: #161212;
+  width: 99%;
+  font-weight: 700;
+  margin-bottom: 7px;
+  margin-left: 7px;
+}
+
+.multiple-select-option
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.MuiSelect-select {
+  white-space: normal;
+  height: 26px;
+  overflow: hidden;
+  margin-right: 2px;
+}
+.multiple-select-option .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  margin-right: 3px;
+}
+@media screen and (max-width: 640px) {
+  .main {
+    padding: 0;
+  }
+}
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.black_btn {
+  @apply rounded-full border border-black bg-black py-1.5 px-5 text-white transition-all hover:bg-white hover:text-black text-center text-sm font-inter flex items-center justify-center;
+}
+
+.outline_btn {
+  @apply rounded-full border border-black bg-transparent py-1.5 px-5 text-black transition-all hover:bg-black hover:text-white text-center text-sm font-inter flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent;
+}
+
+.green_gradient {
+  @apply bg-gradient-to-r from-green-400 to-green-500 bg-clip-text text-transparent;
+}
+
+.blue_gradient {
+  @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+}
+
+.desc {
+  @apply mt-5 text-lg text-gray-600 sm:text-xl max-w-2xl;
+}
+
+.search_input {
+  @apply block w-full rounded-md border border-gray-200 bg-white py-2.5 font-satoshi pl-5 pr-12 text-sm shadow-lg font-medium focus:border-black focus:outline-none focus:ring-0;
+}
+
+/* .copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 shadow-[inset_10px_-50px_94px_0_rgb(199, 199, 199, 0.2)] backdrop-blur flex justify-center items-center cursor-pointer;
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199, 199, 199, 0.2)] backdrop-blur p-5;
+} */
+
+.copy_btn {
+  @apply w-7 h-7 rounded-full bg-white/10 backdrop-blur flex justify-center items-center cursor-pointer;
+  box-shadow: inset 10px -50px 94px 0 rgba(199, 199, 199, 0.2);
+}
+
+.glassmorphism {
+  @apply rounded-xl border border-gray-200 bg-white/20 backdrop-blur p-5;
+  box-shadow: inset 10px -50px 94px 0 rgba(199, 199, 199, 0.2);
+}
+
+.prompt_layout {
+  @apply space-y-6 py-8 sm:columns-2 sm:gap-6 xl:columns-3;
+}
+
+/* Feed Component */
+.feed {
+  @apply mt-16 mx-auto w-full max-w-xl flex justify-center items-center flex-col gap-2;
+}
+
+/* Form Component */
+.form_textarea {
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+/* Nav Component */
+.logo_text {
+  @apply max-sm:hidden font-satoshi font-semibold text-lg text-black tracking-wide;
+}
+
+.dropdown {
+  @apply absolute right-0 top-full mt-3 w-full p-5 rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-end items-end;
+}
+
+.dropdown_link {
+  @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
+}
+
+/* PromptCard Component */
+.prompt_card {
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[360px] w-full h-fit;
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.flex-start {
+  @apply flex justify-start items-start;
+}
+
+.flex-end {
+  @apply flex justify-end items-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.table-content {
+  color: #910a0f;
+}
+.total-content-bar {
+  display: flex;
+  gap: 133px;
+}
+.css-rnmm7m-MuiPaper-root-MuiDialog-paper {
+  max-width: 1258px !important;
+  overflow: unset !important;
+  border-radius: 8px !important;
+}
+.cursel-model {
+  position: absolute;
+  right: -14px;
+  top: -15px;
+  overflow: unset;
+  z-index: 999;
+}
+.popup-model {
+  background: #b82025;
+  color: #fff;
+  border-radius: 8px 8px 0px 0px;
+}
+.serachbar-background {
+  background-image: url("/assets/images/serachbar-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+.search-outer .search-inner {
+  border-radius: 44px !important;
+  background-color: white !important;
+  box-shadow: 1px 5px #ffd3d4 !important;
+}
+.search-outer h1 {
+  color: #4e4e4e;
+  margin-left: 14px;
+}
+.search-outer .MuiInputBase-adornedEnd {
+  border-radius: 44px;
+  background-color: white !important;
+  box-shadow: 1px 5px #ffd3d4 !important;
+}
+.search-outer input {
+  margin-left: 14px !important;
+}
+.search-outer #isBillable {
+  margin-left: 14px !important;
+}
+.search-outer .button-fix {
+  position: static;
+  display: flex;
+  justify-content: left;
+  border: 1px solid #b1b1b1;
+  box-shadow: 1px 5px #ffd3d4 !important;
+}
+
+.css-1rwt2y5-MuiButtonBase-root-MuiButton-root:hover {
+  border: 0.3px solid #4e4e4e00 !important;
+  color: #ffffff !important;
+}
+/*  */
+
+.sticky-header th{
+   position: sticky;
+  
+  background: #231f20;
+  z-index: 2;
+  top: 65px;
+}
+
+.table-header.sticky-header {
+  /* width: calc(100% - 307px) !important; */
+}
+
+.table-outer {
+    overflow: unset !important;
+}
+.input-field {
+  border-radius: 44px !important;
+  background-color: #ffffff !important;
+  min-height: 58px !important;
+}
+.input-field div {
+  border-radius: 44px !important;
+  min-height: 59px !important;
+}
+.input-field input {
+  /* margin-left:10px !important */
+  /* padding:25px */
+}
+.input-field
+  .css-11u53oe-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  /* margin-left:10px !important; */
+  margin-top: 30px !important;
+}
+.input-field .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
+  margin-right: 10px !important;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.search-inner.input-field.\!text-\[\#9F9F9F\].css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+  height: 58px;
+}
+.css-ka7ti6-MuiAutocomplete-root
+  .MuiOutlinedInput-root
+  .MuiAutocomplete-endAdornment {
+  top: 75%;
+}
+.secrch-wrp .button-fix {
+  padding: 16px;
+}
+/* .css-dip3t8 {
+  position: fixed !important;
+  height: 100% !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  z-index: 3 !important;
+  background-color: #231f20 !important;
+  color: #f3f3f3 !important;
+} */
+.css-16jesut >.ps-menu-button:hover {
+   background-color: transparent !important;
+}
+.css-1tqrhto >.ps-menu-button:hover {
+    background-color: transparent !important;
+    color: #b91c1c;
+}
+.ace-outer {
+  height: 38px;
+  width: 43px;
+}
+.ps-submenu-content.css-wlra1l {
+  margin-top: 40px !important;
+  color:rgb(184 32 37);
+}
+.css-1t8x7v1 >.ps-menu-button:hover {
+  background-color: #303030 !important;
+}
+aside.ps-sidebar-root.css-1wvake5 {
+  margin-top: 41px;
+  height: 100%;
+  color: white;
+}
+aside.ps-sidebar-root.css-1wvake5 {
+  position: fixed;
+}
+/* .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiPopover-paper.MuiMenu-paper.MuiMenu-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+    width: 8% !important;
+} */
+
+.login-form-wrapper {
+    background: #FFFAFA;
+    border: 1px solid #FFEAEA;
+    border-radius: 10px;
+}
+.login-form-user{
+  margin-top: 29px;
+}
+main.MuiBox-root {
+    padding-right: 15px;
+}
+ul.css-ewdv3l li {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+.login-forsnap label {
+    padding-left: 20px;
+}
+.login_form.login-forsnap {
+    background: #FFFAFA;
+    border: 1px solid #FFEAEA;
+    border-radius: 10px;
+}
+.login_form.login-forsnap legend {
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.box-card {
+    max-width: 1500px !important;
+}
+.login_form.login-forsnap span {
+    margin-bottom: 15px;
+}
+
+a.black_btn.add-hours {
+    padding: 12px;
+}
+
+.sub-menu-tab ul li {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sub-menu-tab ul li:hover {
+    background: #231f20;
+    color: #fff !important;
+}
+/* .sub-menu-tab ul li a {
+    color: #b82025 !important;
+} */
+.sub-menu-tab ul li:hover a {
+    color: #fff !important;
+}
